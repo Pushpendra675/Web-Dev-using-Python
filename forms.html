@@ -10,7 +10,7 @@
     <h1>Student Registration Form</h1>
     <hr>
 
-    <form>
+    <form action="welcome.html" method="get">
 
         <fieldset>
             <legend>Personal Information</legend>
@@ -52,6 +52,17 @@
         </fieldset>
 
         <br>
+        <fieldset>
+            <legend>Domain</legend>
+           <Select> 
+            <option value="">AI & ML </option>
+            <option value="">Data Science </option>
+            <option value="">Web Devolopment </option>
+            <option value="">E&TC </option>
+           </select>
+        </fieldset>
+
+        <br>
 
         <fieldset>
             <legend>Feedback</legend>
@@ -61,8 +72,42 @@
 
         <br>
 
-        <input type="submit" value="Submit">
+        <fieldset>
+            <legend>Grade Table </legend>
+
+            <table border="2">
+                <tr>
+                    <th>Percentage</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>100-75</td>
+                    <td>Grade-A</td>
+                </tr>
+                <tr>
+                    <td>75-45</td>
+                    <td>Grade-B</td>
+                </tr>
+                <tr>
+                    <td>45-35</td>
+                    <td>Grade-C</td>
+                </tr>
+                <tr>
+                    <td>marks<35</td>
+                    <td>Failed</td>
+                </tr>
+            </table>
+
+            Enter Your Grade:<input type="text">
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">submit</button>
         <input type="reset" value="Reset">
+        
 
     </form>
 
